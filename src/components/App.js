@@ -14,9 +14,7 @@ function App() {
   }, []);
 
   function handleAdd(newItem) {
-    console.log(newItem, questions)
-    setQuestions([...questions], newItem)
-    console.log(questions)
+    setQuestions([...questions, newItem])
   }
 
   function handleDelete(deletedQuestion) {
